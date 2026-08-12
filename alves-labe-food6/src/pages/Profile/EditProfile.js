@@ -31,11 +31,11 @@ export default function EditProfile() {
     !localStorage.getItem('token') && goToLoginPage(navigate)
   }, [])
   const submitEdit = () => {
-    alert('Perfil alterado com sucesso!')
+    alert('Profile updated successfully!')
   }
   return (
     <div>
-      <Header name={'Editar'} onEdit={true}></Header>
+      <Header name={'Edit'} onEdit={true}></Header>
       <Flex
         flexDir={"column"}
         align={"center"}
@@ -52,9 +52,9 @@ export default function EditProfile() {
         >
           <Flex flexDir={"column"} w={"90%"}>
             <FormControl id="name" isRequired isInvalid={errors.name}>
-              <FormHelperText marginBottom={"5px"}>Nome*</FormHelperText>
+              <FormHelperText marginBottom={"5px"}>Name*</FormHelperText>
               <Input
-                placeholder={"Nome Completo"}
+                placeholder={"Full name"}
                 _placeholder={{ color: "#d0d0d0" }}
                 h={"3.5rem"}
                 onChange={onChange}
@@ -62,7 +62,7 @@ export default function EditProfile() {
                 value={form.name}
                 name={"name"}
               ></Input>
-              <FormErrorMessage>Nome é obrigatório</FormErrorMessage>
+              <FormErrorMessage>Name is required</FormErrorMessage>
             </FormControl>
             <FormControl id="email" isRequired isInvalid={errors.email}>
               <FormHelperText marginBottom={"5px"}>Email*</FormHelperText>
@@ -75,7 +75,7 @@ export default function EditProfile() {
                 name={"email"}
                 value={form.email}
               ></Input>
-              <FormErrorMessage>E-mail inválido.</FormErrorMessage>
+              <FormErrorMessage>Invalid email.</FormErrorMessage>
             </FormControl>
             <FormControl id="CPF" isRequired isInvalid={errors.cpf}>
               <FormHelperText marginBottom={"5px"}>CPF*</FormHelperText>
@@ -89,7 +89,7 @@ export default function EditProfile() {
                 value={form.cpf}
               ></Input>
               <FormErrorMessage>
-                O CPF precisa conter no máximo 11 dígitos!
+                The tax ID must be at most 11 digits.
               </FormErrorMessage>
             </FormControl>
             <Button

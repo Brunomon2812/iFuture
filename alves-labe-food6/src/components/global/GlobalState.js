@@ -60,7 +60,7 @@ export default function GlobalState(props) {
         goToHome(navigate)
         setErrors({ email: false, password: false });
       }).catch(err => {
-        alert("Ocorreu um problema");
+        alert("Something went wrong");
         console.log(err);
     });
   };
@@ -97,7 +97,7 @@ export default function GlobalState(props) {
         navigate("/address");
         setErrors({ email: false, password: false, name: false, cpf: false });
       }).catch(err => {
-        alert("Ocorreu um problema");
+        alert("Something went wrong");
         console.log(err);
     });
   };
@@ -132,7 +132,7 @@ export default function GlobalState(props) {
         setEditControl(!editControl)
         setErrors({ street: false, number: false, neighbourhood: false, city: false, state: false });
       }).catch(err => {
-        alert("Ocorreu um problema");
+        alert("Something went wrong");
         console.log(err);
     });
   };
@@ -168,7 +168,7 @@ export default function GlobalState(props) {
         setEditControl(!editControl)
         setErrors({ email: false, name: false, cpf: false });
       }).catch(err => {
-        alert("Ocorreu um problema");
+        alert("Something went wrong");
         console.log(err);
     });
   };

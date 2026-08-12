@@ -129,7 +129,7 @@ const HomePage = () => {
                         pointerEvents='none'
                         children={<SearchIcon color='gray.300' />}
                     />
-                    <Input placeholder={'Restaurante'}
+                    <Input placeholder={'Restaurant'}
                         _placeholder={{ color: '#d0d0d0' }}
                         h={'3.5rem'} w={'20.5rem'}
                         type={'text'}
@@ -183,7 +183,7 @@ const HomePage = () => {
                 <Image src={Clock} />
                 <Flex flexDir={'column'} justifyContent={'left'} marginLeft={'1.5rem'}>
                     <AlertTitle fontFamily={'Roboto'} fontSize={'1rem'} color={'white'} fontWeight={'400'}>
-                        Pedido em andamento
+                        Order in progress
                     </AlertTitle>
                     <AlertDescription fontFamily={'Roboto'}>
                         {activeOrderInfo.restaurantName}

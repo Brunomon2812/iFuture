@@ -20,20 +20,20 @@ export default function Login() {
         <Flex flexDir={'center'} justify={'center'} align={'center'} paddingTop={'5.5rem'} fontFamily={'Roboto'}>
             <Flex flexDir={'column'} gap={'1rem'} w={'90%'}>
                 <Image src={Logo} w={'30%'} alignSelf={'center'} />
-                <Heading alignSelf={'center'} fontSize={'1.125rem'} paddingY={'0.75rem'} fontWeight={'400'} fontFamily={'Roboto'}>Entrar</Heading>
+                <Heading alignSelf={'center'} fontSize={'1.125rem'} paddingY={'0.75rem'} fontWeight={'400'} fontFamily={'Roboto'}>Log in</Heading>
                 <FormControl id='email' isRequired isInvalid={errors.email}>
                     <FormHelperText marginBottom={'5px'}>Email</FormHelperText>
                     <Input placeholder={'email@email.com'} _placeholder={{ color: '#d0d0d0' }} h={'3.5rem'} onChange={onChange} type={'e-mail'} name={'email'}></Input>
-                    <FormErrorMessage>E-mail inválido.</FormErrorMessage>
+                    <FormErrorMessage>Invalid email.</FormErrorMessage>
                 </FormControl>
                 <FormControl id='email' isRequired isInvalid={errors.password}>
-                    <FormHelperText marginBottom={'5px'}>Senha</FormHelperText>
-                    <Input placeholder={'Mínimo 6 caracteres'} _placeholder={{ color: '#d0d0d0' }} h={'3.5rem'} onChange={onChange} type={'password'} name={'password'}></Input>
-                    <FormErrorMessage>Senha inválida.</FormErrorMessage>
+                    <FormHelperText marginBottom={'5px'}>Password</FormHelperText>
+                    <Input placeholder={'At least 6 characters'} _placeholder={{ color: '#d0d0d0' }} h={'3.5rem'} onChange={onChange} type={'password'} name={'password'}></Input>
+                    <FormErrorMessage>Invalid password.</FormErrorMessage>
                 </FormControl> 
-                <Button background={'#E8222E'} borderRadius={'0'} h={'2.625rem'} fontWeight={'400'} onClick={() => userLogin(form)}>Entrar</Button>
+                <Button background={'#E8222E'} borderRadius={'0'} h={'2.625rem'} fontWeight={'400'} onClick={() => userLogin(form)}>Log in</Button>
                 <Flex justify={'center'} marginTop={'0.75rem'}>
-                    <Text>Não possui cadastro? <Link to='/signup'>Clique aqui.</Link></Text>
+                    <Text>No account yet? <Link to='/signup'>Click here.</Link></Text>
                 </Flex>
             </Flex>
         </Flex>

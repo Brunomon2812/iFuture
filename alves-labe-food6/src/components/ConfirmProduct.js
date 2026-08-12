@@ -33,7 +33,7 @@ export default function ConfirmProduct({ handleClick }) {
             <Modal isOpen={onOpen} isCentered={true} size={'md'} >
                 <ModalOverlay />
                 <ModalContent alignItems={'center'} fontFamily={'Roboto'} justifyContent={'center'} w={'90%'} h={'13.5rem'} paddingY={'1rem'}>
-                    <ModalHeader fontSize={'1rem'}>Selecione a quantidade desejada</ModalHeader>
+                    <ModalHeader fontSize={'1rem'}>Select the quantity</ModalHeader>
                     <ModalBody display={'flex'} alignItems={'center'} justifyContent={'center'}>
                         <HStack maxW='10rem' fontFamily={'Roboto'}>
                             <Button {...dec} backgroundColor={'white'} color={'#e8222e'}>-</Button>
@@ -41,7 +41,7 @@ export default function ConfirmProduct({ handleClick }) {
                             <Button {...inc} backgroundColor={'white'} color={'#e8222e'}>+</Button>
                         </HStack>
                     </ModalBody>
-                    <Button onClick={() => handleClick(input.value)} background={'white'} color={'blue.300'} fontFamily={'Roboto'} alignSelf={'flex-end'}>ADICIONAR AO CARRINHO</Button>
+                    <Button onClick={() => handleClick(input.value)} background={'white'} color={'blue.300'} fontFamily={'Roboto'} alignSelf={'flex-end'}>ADD TO CART</Button>
                 </ModalContent>
             </Modal>
         </>

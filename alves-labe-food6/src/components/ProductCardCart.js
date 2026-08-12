@@ -52,7 +52,7 @@ export default function ProductCardCart({ photoUrl, name, price, description, qu
                         color={'#e8222e'}
                         letterSpacing={'0.7px'}
                         onClick={handleRemove}
-                        >remover</Button>
+                        >remove</Button>
                 </Flex>
             </Flex>
         </Flex>

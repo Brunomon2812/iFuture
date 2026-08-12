@@ -25,11 +25,11 @@ export const EditAddress = () => {
     !localStorage.getItem('token') && goToLoginPage(navigate)
   }, [])
   const submitEdit = () => {
-    alert('Endereço alterado com sucesso!')
+    alert('Address updated successfully!')
   }
   return (
     <Stack>
-      <Header name={'Endereço'} onEditAddress={true} />
+      <Header name={'Address'} onEditAddress={true} />
       <Flex
         flexDir={"center"}
         justify={"center"}
@@ -39,9 +39,9 @@ export const EditAddress = () => {
       >
         <Flex flexDir={"column"} w={"90%"}>
           <FormControl id="street" isRequired isInvalid={errors.street}>
-            <FormHelperText marginBottom={"5px"}>Logradouro*</FormHelperText>
+            <FormHelperText marginBottom={"5px"}>Street*</FormHelperText>
             <Input
-              placeholder={"Rua/Av."}
+              placeholder={"Street/Ave."}
               _placeholder={{ color: "#d0d0d0" }}
               h={"3.5rem"}
               onChange={onChange}
@@ -49,12 +49,12 @@ export const EditAddress = () => {
               name={"street"}
               value={form.street}
             ></Input>
-            <FormErrorMessage>Logradouro é obrigatório</FormErrorMessage>
+            <FormErrorMessage>Street is required</FormErrorMessage>
           </FormControl>
           <FormControl id="number" isRequired isInvalid={errors.number}>
-            <FormHelperText marginBottom={"5px"}>Número*</FormHelperText>
+            <FormHelperText marginBottom={"5px"}>Number*</FormHelperText>
             <Input
-              placeholder={"Número"}
+              placeholder={"Number"}
               _placeholder={{ color: "#d0d0d0" }}
               h={"3.5rem"}
               onChange={onChange}
@@ -62,12 +62,12 @@ export const EditAddress = () => {
               value={form.number}
               name={"number"}
             ></Input>
-            <FormErrorMessage>Número é obrigatório</FormErrorMessage>
+            <FormErrorMessage>Number is required</FormErrorMessage>
           </FormControl>
           <FormControl id="complement" isInvalid={errors.complement}>
-            <FormHelperText marginBottom={"5px"}>Complemento</FormHelperText>
+            <FormHelperText marginBottom={"5px"}>Address line 2</FormHelperText>
             <Input
-              placeholder={"Apto./Bloco."}
+              placeholder={"Apt./Unit"}
               _placeholder={{ color: "#d0d0d0" }}
               h={"3.5rem"}
               onChange={onChange}
@@ -75,16 +75,16 @@ export const EditAddress = () => {
               value={form.complement}
               name={"complement"}
             ></Input>
-            <FormErrorMessage>Complemento é inválido.</FormErrorMessage>
+            <FormErrorMessage>Address line 2 is invalid.</FormErrorMessage>
           </FormControl>
           <FormControl
             id="neighbourhood"
             isRequired
             isInvalid={errors.neighbourhood}
           >
-            <FormHelperText marginBottom={"5px"}>Bairro*</FormHelperText>
+            <FormHelperText marginBottom={"5px"}>District*</FormHelperText>
             <Input
-              placeholder={"Bairro"}
+              placeholder={"District"}
               _placeholder={{ color: "#d0d0d0" }}
               h={"3.5rem"}
               onChange={onChange}
@@ -92,12 +92,12 @@ export const EditAddress = () => {
               type={"text"}
               name={"neighbourhood"}
             ></Input>
-            <FormErrorMessage>Bairro é obrigatório.</FormErrorMessage>
+            <FormErrorMessage>District is required.</FormErrorMessage>
           </FormControl>
           <FormControl id="city" isRequired isInvalid={errors.city}>
-            <FormHelperText marginBottom={"5px"}>Cidade*</FormHelperText>
+            <FormHelperText marginBottom={"5px"}>City*</FormHelperText>
             <Input
-              placeholder={"Cidade"}
+              placeholder={"City"}
               _placeholder={{ color: "#d0d0d0" }}
               h={"3.5rem"}
               onChange={onChange}
@@ -105,12 +105,12 @@ export const EditAddress = () => {
               value={form.city}
               name={"city"}
             ></Input>
-            <FormErrorMessage>Cidade é obrigatório.</FormErrorMessage>
+            <FormErrorMessage>City is required.</FormErrorMessage>
           </FormControl>
           <FormControl id="state" isRequired isInvalid={errors.state}>
-            <FormHelperText marginBottom={"5px"}>Estado*</FormHelperText>
+            <FormHelperText marginBottom={"5px"}>State*</FormHelperText>
             <Input
-              placeholder={"Estado"}
+              placeholder={"State"}
               _placeholder={{ color: "#d0d0d0" }}
               h={"3.5rem"}
               onChange={onChange}
@@ -118,7 +118,7 @@ export const EditAddress = () => {
               value={form.state}
               name={"state"}
             ></Input>
-            <FormErrorMessage>Estado é obrigatório.</FormErrorMessage>
+            <FormErrorMessage>State is required.</FormErrorMessage>
           </FormControl>
           <Button
             background={"#E8222E"}

@@ -89,7 +89,7 @@ export default function Profile() {
         <p>{profile.cpf}</p>
       </CardUserInfo>
       <CardAdressInfo>
-        <Flex align={"center"} justify={"space-between"}><H3>Endereço cadastrado</H3><Image src={EditIcon} onClick={() => goToEditAddress(navigate)} _hover={{ cursor: 'pointer' }} /></Flex>
+        <Flex align={"center"} justify={"space-between"}><H3>Saved address</H3><Image src={EditIcon} onClick={() => goToEditAddress(navigate)} _hover={{ cursor: 'pointer' }} /></Flex>
         <strong>
           <p>{profile.address}</p>
         </strong>
@@ -113,16 +113,16 @@ export default function Profile() {
         </RestaurantCard>
       );
     }))
-    : (orderHistoryCard = <p>Você não realizou nenhum</p>);
+    : (orderHistoryCard = <p>You have not placed any orders yet</p>);
 
   return (
     <div>
-      <Header name={'Meu perfil'} />
+      <Header name={'My profile'} />
       <Flex flexDir={"column"} minH={'100vh'}>
         <hr></hr>
         {profileCard}
         <CardHistoryOrder>
-          <p>Histórico de pedidos</p>
+          <p>Order history</p>
         </CardHistoryOrder>
         <DivHr>
           <HR></HR>

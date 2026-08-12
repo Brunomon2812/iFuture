@@ -30,7 +30,7 @@ const RestaurantPage = () => {
 
   return (
     <div>
-      <Header name={'Restaurante'} onRestaurant={true}/>
+      <Header name={'Restaurant'} onRestaurant={true}/>
       <RestaurantCardProfile></RestaurantCardProfile>
       {uniqueCategories.map((item) => {
         const products = restaurantProducts.filter((product) => {

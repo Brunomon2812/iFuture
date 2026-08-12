@@ -79,7 +79,7 @@ export default function ProductCard({ photoUrl, name, price, description, id }) 
                         fontFamily={'Roboto'}
                         color={'#e8222e'}
                         letterSpacing={'0.7px'}
-                        onClick={() => handleRemove(name)}>remover</Button> :
+                        onClick={() => handleRemove(name)}>remove</Button> :
                         <Button
                             w={'5.5rem'}
                             h={'1.9rem'}
@@ -90,7 +90,7 @@ export default function ProductCard({ photoUrl, name, price, description, id }) 
                             fontSize={'0.75rem'}
                             fontFamily={'Roboto'}
                             letterSpacing={'0.7px'}
-                            onClick={() => setConfirmProduct(true)}>adicionar</Button>}
+                            onClick={() => setConfirmProduct(true)}>add</Button>}
                 </Flex>
             </Flex>
             {confirmProduct && <ConfirmProduct handleClick={handleClick}></ConfirmProduct>}

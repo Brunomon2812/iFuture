@@ -57,19 +57,19 @@ export default function Signup() {
               fontWeight={"400"}
               fontFamily={"Roboto"}
             >
-              Cadastrar
+              Sign up
             </Heading>
             <FormControl id="name" isRequired isInvalid={errors.name}>
-              <FormHelperText marginBottom={"5px"}>Nome*</FormHelperText>
+              <FormHelperText marginBottom={"5px"}>Name*</FormHelperText>
               <Input
-                placeholder={"Nome Completo"}
+                placeholder={"Full name"}
                 _placeholder={{ color: "#d0d0d0" }}
                 h={"3.5rem"}
                 onChange={onChange}
                 type={"text"}
                 name={"name"}
               ></Input>
-              <FormErrorMessage>Nome é obrigatório</FormErrorMessage>
+              <FormErrorMessage>Name is required</FormErrorMessage>
             </FormControl>
             <FormControl id="email" isRequired isInvalid={errors.email}>
               <FormHelperText marginBottom={"5px"}>Email*</FormHelperText>
@@ -81,7 +81,7 @@ export default function Signup() {
                 type={"e-mail"}
                 name={"email"}
               ></Input>
-              <FormErrorMessage>E-mail inválido.</FormErrorMessage>
+              <FormErrorMessage>Invalid email.</FormErrorMessage>
             </FormControl>
             <FormControl id="CPF" isRequired isInvalid={errors.cpf}>
               <FormHelperText marginBottom={"5px"}>CPF*</FormHelperText>
@@ -94,14 +94,14 @@ export default function Signup() {
                 name={"cpf"}
               ></Input>
               <FormErrorMessage>
-                O CPF precisa conter 11 dígitos!
+                The tax ID must be 11 digits.
               </FormErrorMessage>
             </FormControl>
-            <FormControl id="senha" isRequired isInvalid={errors.password}>
-              <FormHelperText marginBottom={"5px"}>Senha*</FormHelperText>
+            <FormControl id="password" isRequired isInvalid={errors.password}>
+              <FormHelperText marginBottom={"5px"}>Password*</FormHelperText>
               <InputGroup size="md">
                 <Input
-                  placeholder={"Mínimo 6 caracteres"}
+                  placeholder={"At least 6 characters"}
                   _placeholder={{ color: "#d0d0d0" }}
                   h={"3.5rem"}
                   onChange={onChange}
@@ -118,13 +118,13 @@ export default function Signup() {
                   ></IconButton>
                 </InputRightElement>
               </InputGroup>
-              <FormErrorMessage>Senha inválida.</FormErrorMessage>
+              <FormErrorMessage>Invalid password.</FormErrorMessage>
             </FormControl>
-            <FormControl id="Confirmar" isRequired isInvalid={errors.password}>
-              <FormHelperText marginBottom={"5px"}>Confirmar*</FormHelperText>
+            <FormControl id="Confirm" isRequired isInvalid={errors.password}>
+              <FormHelperText marginBottom={"5px"}>Confirm*</FormHelperText>
               <InputGroup size="md">
                 <Input
-                  placeholder={"Confirmar senha"}
+                  placeholder={"Confirm password"}
                   _placeholder={{ color: "#d0d0d0" }}
                   h={"3.5rem"}
                   onChange={onChange}
@@ -152,7 +152,7 @@ export default function Signup() {
               fontWeight={"400"}
               onClick={() => userSignUp(form)}
             >
-              Criar
+              Create
             </Button>
             <Flex justify={"center"} marginTop={"0.75rem"}></Flex>
           </Flex>

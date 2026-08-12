@@ -91,10 +91,6 @@ Projeto final do curso de Front-End da Labenu. A ideia foi desenvolver um aplica
 
 
 
-# 👩‍💻 Desenvolvedores
-
-- Arthur Grossi Fernandes
+# 👩‍💻 Desenvolvedor
 - Bruno Monteiro
-- Guilherme Tocci
-- João Gabriel Colodetti do Carmo
-- Rafael Santos
+
